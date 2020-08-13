@@ -1,0 +1,22 @@
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  background-color: rgb(196, 138, 31);
+}
+main {
+  text-align: left;
+}
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+.sign-up {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+}
