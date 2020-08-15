@@ -5,7 +5,7 @@ body {
   max-width: 500px;
   margin: auto 0;
   text-align: center;
-  color: #ffa500;
+  line-height: 30px;
 }
 
 main {
@@ -13,6 +13,10 @@ main {
 }
 h1 {
   color: #1d1c1c;
+  color: white;
+}
+h2 {
+  padding: 10px;
 }
 h3 {
   font-size: 23px;
@@ -23,7 +27,7 @@ fieldset {
 }
 /* Header */
 .form-head {
-  background-color: #ffa500;
+  background-color: #abe8e6;
   padding: 5px;
 }
 .latest-news {
@@ -31,13 +35,12 @@ fieldset {
   margin-top: 0;
   margin-bottom: 30px;
 }
-
 hr {
-  border: 1px solid #ffa500;
+  border: 1px solid #41b5af;
   margin: 4px auto;
 }
 .main-hr {
-  border: 2px solid #ffa500;
+  border: 2px solid #41b5af;
   margin: 0;
 }
 /* Contact Information */
@@ -50,34 +53,52 @@ input[type="text"],
 input[type="email"],
 input[type="tel"] {
   border: none;
-  width: 90%;
+  width: 95%;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
+  background-color: #ff6c8c41;
+  border-radius: 5px;
+}
+.select-state {
+  border: none;
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0 10px 20px;
+  background-color: #ff6c8c41;
+  border-radius: 5px;
 }
 
 .contact-section {
   display: flex;
   flex-direction: column;
 }
-/* Newsletter */
-.news-section {
-  color: #1d1c1c;
-  background-color: #ffa500;
-}
-
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="tel"]:focus {
+input[type="tel"]:focus,
+.select-state:focus {
   background-color: #ff6c8c41;
   padding: 10px;
   border-radius: 5px;
   margin: 10px;
 }
-#other-topics:focus {
-  background-color: #ff6c8c41;
+
+/* Newsletter */
+.news-section {
+  background-color: #abe8e6;
 }
+textarea {
+  width: 30px 200px;
+  border-radius: 5px;
+}
+
 .sign-up {
   cursor: pointer;
+  background-color: #ff6c8c41;
+  border-radius: 5px;
+  padding: 10px 100px;
+  text-align: center;
+  margin: 30px;
+  border-color: #ff6c8c41;
 }
 
 @media (min-width: 768px) {
