@@ -2,8 +2,8 @@
 
 /* One For All */
 body {
-  max-width: 500px;
-  margin: auto 0;
+  /* max-width: 500px; */
+  /* margin: 0 auto; */
   text-align: center;
   line-height: 30px;
 }
@@ -22,13 +22,17 @@ h3 {
   font-size: 23px;
   margin-bottom: 10px;
 }
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
 fieldset {
   border: none;
 }
 /* Header */
 .form-head {
   background-color: #abe8e6;
-  padding: 5px;
+  padding: 1px;
 }
 .latest-news {
   opacity: 0.5;
@@ -44,11 +48,17 @@ hr {
   margin: 0;
 }
 /* Contact Information */
+/* .contact-section {
+  display: flex;
+  flex-direction: column;
+} */
+
 input::placeholder {
   text-align: right;
   opacity: 0.5;
   font-style: italic;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
@@ -59,19 +69,7 @@ input[type="tel"] {
   background-color: #ff6c8c41;
   border-radius: 5px;
 }
-.select-state {
-  border: none;
-  width: 95%;
-  padding: 10px;
-  margin: 10px 0 10px 20px;
-  background-color: #ff6c8c41;
-  border-radius: 5px;
-}
 
-.contact-section {
-  display: flex;
-  flex-direction: column;
-}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -82,12 +80,27 @@ input[type="tel"]:focus,
   margin: 10px;
 }
 
+#zip {
+  width: fit-content;
+}
+
+.select-state {
+  border: none;
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0 10px 20px;
+  background-color: #ff6c8c41;
+  border-radius: 5px;
+}
+
 /* Newsletter */
 .news-section {
   background-color: #abe8e6;
+  border-radius: 5px;
 }
+
 textarea {
-  width: 30px 200px;
+  width: 30px 10px;
   border-radius: 5px;
 }
 
@@ -95,11 +108,28 @@ textarea {
   cursor: pointer;
   background-color: #ff6c8c41;
   border-radius: 5px;
-  padding: 10px 100px;
+  padding: 15px 100px;
   text-align: center;
-  margin: 30px;
+  margin: 15px 0 0 10px;
+  width: 95%;
   border-color: #ff6c8c41;
 }
 
 @media (min-width: 768px) {
+  #contact-label {
+    align-content: flex-start;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-between;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  .select-state {
+    width: 50%;
+  }
 }

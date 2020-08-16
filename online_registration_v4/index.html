@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <title>The Code Review</title>
   </head>
   <body>
@@ -14,91 +14,88 @@
       </div>
       <h3>Signup for our newsletter</h3>
       <p class="latest-news">Get the latest news on how your code is doing right in your inbox</p>
-      <hr class="main-hr">
-      <hr />
-      
-    
     </header>
     <main>
       <form action="">
+        <hr class="main-hr">
+        <hr />
         <section class="contact-section">
           <h2>Contact Information</h2>
-          <fieldset>
-            <label for="name">Full Name</label><br />
-            <input type="text" id="name" name="user_name" placeholder="Required" required/><br />
-            <label for="mail">Email Address</label>
-            <input type="email" id="mail" name="user_email" placeholder="Required" required/><br />
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone" placeholder="###-###-####" required/><br />
-            <label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address" placeholder="Address" /><br />
-            <label for="city">City</label><br />
-            <input type="text" id="city" name="user_city" placeholder="City" /><br />
-            <label for="state">State</label><br />
-              <select name="user_state" id="state" placeholder="Choose State" class="select-state">
-                <option value="" disabled selected>Choose State</option>
-                <option value="AL">AL</option>
-                <option value="AK">AK</option>
-                <option value="AZ">AZ</option>
-                <option value="AR">AR</option>
-                <option value="CA">CA</option>
-                <option value="CO">CO</option>
-                <option value="CT">CT</option>
-                <option value="DE">DE</option>
-                <option value="DC">DC</option>
-                <option value="FL">FL</option>
-                <option value="GA">GA</option>
-                <option value="HI">HI</option>
-                <option value="ID">ID</option>
-                <option value="IL">IL</option>
-                <option value="IN">IN</option>
-                <option value="IA">IA</option>
-                <option value="KS">KS</option>
-                <option value="KY">KY</option>
-                <option value="LA">LA</option>
-                <option value="ME">ME</option>
-                <option value="MD">MD</option>
-                <option value="MA">MA</option>
-                <option value="MI">MI</option>
-                <option value="MN">MN</option>
-                <option value="MS">MS</option>
-                <option value="MO">MO</option>
-                <option value="MT">MT</option>
-                <option value="NE">NE</option>
-                <option value="NV">NV</option>
-                <option value="NH">NH</option>
-                <option value="NJ">NJ</option>
-                <option value="NM">NM</option>
-                <option value="NY">NY</option>
-                <option value="NC">NC</option>
-                <option value="ND">ND</option>
-                <option value="OH">OH</option>
-                <option value="OK">OK</option>
-                <option value="OR">OR</option>
-                <option value="PA">PA</option>
-                <option value="PR">PR</option>
-                <option value="RI">RI</option>
-                <option value="SC">SC</option>
-                <option value="SD">SD</option>
-                <option value="TN">TN</option>
-                <option value="TX">TX</option>
-                <option value="UT">UT</option>
-                <option value="VT">VT</option>
-                <option value="VA">VA</option>
-                <option value="WA">WA</option>
-                <option value="WV">WV</option>
-                <option value="WI">WI</option>
-                <option value="WY">WY</option> 
-              </select>
-              <br />
-            <label for="zip">Zip Code</label><br />
-            <input type="text" id="zip" name="user_zip" placeholder="Zip" />
-          </fieldset>
+            <fieldset>
+              <label for="name" id="contact-label">Full Name</label>
+              <input type="text" id="name" name="user_name" placeholder="Required" required/><br />
+              <label for="mail" id="contact-label">Email Address</label>
+              <input type="email" id="mail" name="user_email" placeholder="Required" required/><br />
+              <label for="phone" id="contact-label">Phone Number</label>
+              <input type="tel" id="phone" name="user_phone" placeholder="###-###-####" required/><br />
+              <label for="address" id="contact-label">Street Address</label>
+              <input type="text" id="address" name="user_address" placeholder="Address" /><br />
+              <label for="city" id="contact-label">City</label>
+              <input type="text" id="city" name="user_city" placeholder="City" /><br />
+              <label for="state" id="contact-label">State</label>
+                <select name="user_state" id="state" placeholder="Choose State" class="select-state">
+                  <option value="" disabled selected>Choose State</option>
+                  <option value="AL">AL</option>
+                  <option value="AK">AK</option>
+                  <option value="AZ">AZ</option>
+                  <option value="AR">AR</option>
+                  <option value="CA">CA</option>
+                  <option value="CO">CO</option>
+                  <option value="CT">CT</option>
+                  <option value="DE">DE</option>
+                  <option value="DC">DC</option>
+                  <option value="FL">FL</option>
+                  <option value="GA">GA</option>
+                  <option value="HI">HI</option>
+                  <option value="ID">ID</option>
+                  <option value="IL">IL</option>
+                  <option value="IN">IN</option>
+                  <option value="IA">IA</option>
+                  <option value="KS">KS</option>
+                  <option value="KY">KY</option>
+                  <option value="LA">LA</option>
+                  <option value="ME">ME</option>
+                  <option value="MD">MD</option>
+                  <option value="MA">MA</option>
+                  <option value="MI">MI</option>
+                  <option value="MN">MN</option>
+                  <option value="MS">MS</option>
+                  <option value="MO">MO</option>
+                  <option value="MT">MT</option>
+                  <option value="NE">NE</option>
+                  <option value="NV">NV</option>
+                  <option value="NH">NH</option>
+                  <option value="NJ">NJ</option>
+                  <option value="NM">NM</option>
+                  <option value="NY">NY</option>
+                  <option value="NC">NC</option>
+                  <option value="ND">ND</option>
+                  <option value="OH">OH</option>
+                  <option value="OK">OK</option>
+                  <option value="OR">OR</option>
+                  <option value="PA">PA</option>
+                  <option value="PR">PR</option>
+                  <option value="RI">RI</option>
+                  <option value="SC">SC</option>
+                  <option value="SD">SD</option>
+                  <option value="TN">TN</option>
+                  <option value="TX">TX</option>
+                  <option value="UT">UT</option>
+                  <option value="VT">VT</option>
+                  <option value="VA">VA</option>
+                  <option value="WA">WA</option>
+                  <option value="WV">WV</option>
+                  <option value="WI">WI</option>
+                  <option value="WY">WY</option> 
+                </select><br />
+              <label for="zip" id="contact-label">Zip Code</label>
+              <input type="text" id="zip" name="user_zip" placeholder="Zip" /><br>
+              </fieldset>
         </section>
       
         <hr />
         <section >
-          <h2>Newsletter</h2>
+          <h2 class="newsletter">Newsletter</h2>
           <fieldset class="news-section">
             <p>Select the newsletters you would like to recieve</p>
             <input type="checkbox" id="html_news" name="checkbox_html" />
@@ -118,6 +115,7 @@
         </section>
         <button class="sign-up">Sign Up</button>
     </main>
+      
       <footer>
         <p><em>Copyright The Code Review</em></p>
       </footer>
