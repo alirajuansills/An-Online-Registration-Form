@@ -1,12 +1,11 @@
 /* DON'T Reapeat Yourself */
 
 /* One For All */
+
 body {
-  /* max-width: 500px; */
-  /* margin: 0 auto; */
   text-align: center;
   line-height: 30px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Lato";
 }
 
 main {
@@ -19,13 +18,15 @@ h1 {
 h2 {
   padding: 10px;
 }
-h3 {
+legend {
   font-size: 23px;
-  margin-bottom: 10px;
+  margin: 15px 0;
+  font-weight: 800;
 }
 form {
   max-width: 500px;
   margin: 0 auto;
+  text-align: left;
 }
 fieldset {
   border: none;
@@ -69,6 +70,7 @@ input[type="tel"],
   background-color: #ff6c8c41;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 1s ease-out;
 }
 
 .select-state {
@@ -79,7 +81,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 .select-state:focus {
-  background-color: #ff6c8c41;
+  background-color: #abe8e6;
 }
 
 #zip {
@@ -90,13 +92,14 @@ input[type="tel"]:focus,
 .news-section {
   background-color: #abe8e6;
   border-radius: 5px;
+  padding: 10px;
 }
 .news label {
   padding: 5px;
 }
 textarea {
-  width: 30px 10px;
   border-radius: 5px;
+  overflow: auto;
 }
 
 .sign-up {
@@ -108,10 +111,14 @@ textarea {
   margin-top: 15px;
   width: 100%;
   border-color: #ff6c8c41;
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 768px) {
+  .contact-container,
+  .news-container {
+    padding: 0;
+  }
 
   #contact-section {
     padding: 0;
@@ -122,15 +129,15 @@ textarea {
     justify-content: space-between;
   }
   .select-state {
-    width: 79%;
+    width: 75%;
   }
   #zip {
-  margin-right: 179px;
-}
+    margin-right: 167px;
+  }
   input[type="text"],
   input[type="email"],
   input[type="tel"] {
-    width: 75%;
+    width: 70%;
   }
 
   label {
