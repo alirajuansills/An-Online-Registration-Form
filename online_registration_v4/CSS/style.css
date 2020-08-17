@@ -6,6 +6,7 @@ body {
   /* margin: 0 auto; */
   text-align: center;
   line-height: 30px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 main {
@@ -47,12 +48,10 @@ hr {
   border: 2px solid #41b5af;
   margin: 0;
 }
-/* Contact Information */
-/* .contact-section {
-  display: flex;
-  flex-direction: column;
-} */
-
+/* Contact Section */
+.contact-section label {
+  margin-top: 15px;
+}
 input::placeholder {
   text-align: right;
   opacity: 0.5;
@@ -61,13 +60,19 @@ input::placeholder {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+.select-state {
   border: none;
   width: 95%;
   padding: 10px;
   margin: 10px 10px 10px 0;
   background-color: #ff6c8c41;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-state {
+  width: 100%;
 }
 
 input[type="text"]:focus,
@@ -75,22 +80,10 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 .select-state:focus {
   background-color: #ff6c8c41;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
 }
 
 #zip {
   width: fit-content;
-}
-
-.select-state {
-  border: none;
-  width: 95%;
-  padding: 10px;
-  margin: 10px 0 10px 20px;
-  background-color: #ff6c8c41;
-  border-radius: 5px;
 }
 
 /* Newsletter */
@@ -98,7 +91,9 @@ input[type="tel"]:focus,
   background-color: #abe8e6;
   border-radius: 5px;
 }
-
+.news label {
+  padding: 5px;
+}
 textarea {
   width: 30px 10px;
   border-radius: 5px;
@@ -110,26 +105,35 @@ textarea {
   border-radius: 5px;
   padding: 15px 100px;
   text-align: center;
-  margin: 15px 0 0 10px;
-  width: 95%;
+  margin-top: 15px;
+  width: 100%;
   border-color: #ff6c8c41;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 768px) {
-  #contact-label {
-    align-content: flex-start;
+
+  #contact-section {
+    padding: 0;
   }
   .contact-section {
     display: flex;
-    flex-direction: column;
-    align-content: flex-end;
+    flex-direction: row;
     justify-content: space-between;
   }
-
+  .select-state {
+    width: 79%;
+  }
+  #zip {
+  margin-right: 179px;
+}
   input[type="text"],
   input[type="email"],
-  input[type="tel"],
-  .select-state {
-    width: 50%;
+  input[type="tel"] {
+    width: 75%;
+  }
+
+  label {
+    width: 30%;
   }
 }
